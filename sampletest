@@ -1,0 +1,30 @@
+> rama <- open.account(100)
+> mm <- open.account(200)
+> rama$withdraw(30)
+30 withdrawn.  Your balance is 70 
+
+> rama$balance()
+Your balance is 70
+
+> mm$balance()
+Your balance is 200 
+
+> rama$deposit(50)
+50 deposited.  Your balance is 120 
+
+> rama$balance()
+Your balance is 120 
+
+> rama$withdraw(500)
+Error in rama$withdraw(500) : You don't have that much money!
+> mm$balance()
+Your balance is 200
+
+> mm$withdraw(12)
+12 withdrawn.  Your balance is 188 
+
+> mm$balance()
+Your balance is 188 
+
+> rama$balance()
+Your balance is 120
